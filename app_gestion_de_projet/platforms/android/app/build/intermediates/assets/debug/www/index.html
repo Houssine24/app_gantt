@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Gestion de projet</title>
+</head>
+<body>
+    <div class="app">
+        <h1>Application Gantt</h1>
+        <div class="card">
+            <div class="form-group">
+                <label for="tache">Tâche</label>
+                <input id="inputTache" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="prealable">Tâche préalable</label>
+                <input id="inputPrealable" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="commentaire">Commentaire</label>
+                <textarea id="inputCommentaire" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="statut">Statut</label>
+                <select id="inputStatut" class="form-control">
+                    <option selected="En cours" value="En cours">En cours</option>
+                    <option value="Coincé">Coincé</option>
+                    <option value="Fait">Fait</option>
+                </select>    
+            </div>
+            <div class="form-group">
+                <label for="debut">Date de début</label>
+                <input id="inputDebut" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="fin">Date de fin</label>
+                <input id="inputFin" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="duree">Durée</label>
+                <input id="inputDuree" type="time" class="form-control">
+            </div>
+            <button id="btnValider" type="button" class="btn btn-success">Valider</button>
+        </div>
+
+
+        <table id="tableauTodo" class="table table-hover">
+          <thead class="thead">
+            <tr>
+                <th scope="col">Tâche</th>
+                <th scope="col">Préalable</th>
+                <th scope="col">Commentaire</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Date de début</th>
+                <th scope="col">Date de fin</th>
+                <th scope="col">Durée</th>
+                <th scope="col">Option 1</th>
+                <th scope="col">Option 2</th>
+            </tr>
+        </thead>
+        <tbody id="tableau" class="table">
+    
+        </tbody>
+    </table>
+
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/formulaire.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.card{
+	width: 18rem;
+	margin-left: 40%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+h1{
+	margin-left: 40%;
+}
+
+table, th, td {
+  text-align: center;
+}
+
+#tableauTodo{
+	margin-bottom: 10%;
+}
